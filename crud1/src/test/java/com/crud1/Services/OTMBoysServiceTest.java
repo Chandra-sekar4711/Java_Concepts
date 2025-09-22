@@ -52,8 +52,8 @@ class OTMBoysServiceTest {
     @Test
     void testUpdateBoysbyID_Success() {
         // Mock repo behavior
-        // when(otmrepo.findById(1)).thenReturn(Optional.of(existingBoys));
-         when(otmrepo.save(any(OTMBoys.class))).thenAnswer(invocation -> invocation.getArgument(0));
+        when(otmrepo.findById(1)).thenReturn(Optional.of(existingBoys));
+        when(otmrepo.save(any(OTMBoys.class))).thenAnswer(invocation -> invocation.getArgument(0));
 
         // Execute service
         OTMBoys result = otmService.updateBoysbyID(updateBoys);
