@@ -6,6 +6,7 @@ public class RaceConditionExample {
     private volatile  static int counter = 0;  // shared resource
 
     public   void increment() {
+        System.out.println(Thread.currentThread().getName());
         counter++;
     }
 

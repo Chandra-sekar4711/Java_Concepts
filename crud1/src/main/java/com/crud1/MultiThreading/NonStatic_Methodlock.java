@@ -15,7 +15,7 @@ public class NonStatic_Methodlock extends MultithreadMain implements Runnable{
     }
 
     private synchronized void methodA() {
-        for (int i =1;i<=5;i++)
+        for (int i =1;i<=3;i++)
         {
             System.out.println(Thread.currentThread().getName() + " is processing Method A" + i);
         }
@@ -23,7 +23,7 @@ public class NonStatic_Methodlock extends MultithreadMain implements Runnable{
      //both MethodA and Method B are same syntaxtically it different
     private void methodB() {
         synchronized (this){
-        for (int i =1;i<=5;i++)
+        for (int i =1;i<=3;i++)
         {
             System.out.println(Thread.currentThread().getName() + " is processing Method B" + i);
 
@@ -43,8 +43,11 @@ public class NonStatic_Methodlock extends MultithreadMain implements Runnable{
         NonStatic_Methodlock m2 = new NonStatic_Methodlock();
         Thread t3 = new Thread(m2::methodA);
          t1.start();
+         t1.setName("t1");
          t2.start();
+        t2.setName("t2");
          t3.start();
+        t3.setName("t3");
     }
 
 }

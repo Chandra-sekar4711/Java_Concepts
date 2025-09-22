@@ -2,14 +2,14 @@ package com.crud1.MultiThreading;
 
 public class MultithreadMain {
 
-    private void methodA() {
+    private void methodA(){
         for (int i =1;i<=5;i++)
         {
             System.out.println(Thread.currentThread().getName() + " is processing Method A" + i);
         }
     }
 
-    private void methodB() {
+    private void methodB(){
         for (int i =1;i<=5;i++)
         {
             System.out.println(Thread.currentThread().getName() + " is processing Method B" + i);

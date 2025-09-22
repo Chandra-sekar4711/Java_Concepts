@@ -10,7 +10,6 @@ public class Reentrants {
         }
         MethodB();
     }
-
     public static synchronized void MethodB()
     {
         for (int i =1;i<=5;i++)
