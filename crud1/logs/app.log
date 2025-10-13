@@ -1,21 +1,168 @@
-2025-08-23T16:13:24.958+05:30  INFO 6400 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Starting Crud1ApplicationTests using Java 17.0.8 with PID 6400 (started by chandrasekar.p in D:\E\crud\crud1\crud1)
-2025-08-23T16:13:24.964+05:30  INFO 6400 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : No active profile set, falling back to 1 default profile: "default"
-2025-08-23T16:13:26.292+05:30  INFO 6400 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-23T16:13:26.454+05:30  INFO 6400 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 3 JPA repository interfaces.
-2025-08-23T16:13:27.258+05:30  INFO 6400 --- [crud1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-23T16:13:27.401+05:30  INFO 6400 --- [crud1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
-2025-08-23T16:13:27.470+05:30  INFO 6400 --- [crud1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-23T16:13:27.912+05:30  INFO 6400 --- [crud1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-23T16:13:27.941+05:30  INFO 6400 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-08-23T16:13:28.437+05:30  INFO 6400 --- [crud1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c27e700
-2025-08-23T16:13:28.441+05:30  INFO 6400 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-08-23T16:13:28.518+05:30  WARN 6400 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-08-23T16:13:28.520+05:30  WARN 6400 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-08-23T16:13:30.294+05:30  INFO 6400 --- [crud1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-23T16:13:30.444+05:30  INFO 6400 --- [crud1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-23T16:13:31.004+05:30  INFO 6400 --- [crud1] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-08-23T16:13:31.977+05:30  WARN 6400 --- [crud1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-23T16:13:32.709+05:30  INFO 6400 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Started Crud1ApplicationTests in 8.216 seconds (process running for 9.64)
-2025-08-23T16:13:33.573+05:30  INFO 6400 --- [crud1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-08-23T16:13:33.581+05:30  INFO 6400 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-08-23T16:13:33.606+05:30  INFO 6400 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-22T12:40:41.485+05:30  INFO 7500 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Starting Crud1ApplicationTests using Java 17.0.8 with PID 7500 (started by chandrasekar.p in D:\E\Crud Samples\Java_Concepts\crud1)
+2025-09-22T12:40:41.492+05:30  INFO 7500 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2025-09-22T12:40:42.742+05:30  INFO 7500 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-22T12:40:42.874+05:30  INFO 7500 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 3 JPA repository interfaces.
+2025-09-22T12:40:43.650+05:30  INFO 7500 --- [crud1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-22T12:40:43.791+05:30  INFO 7500 --- [crud1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-22T12:40:43.881+05:30  INFO 7500 --- [crud1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-22T12:40:44.248+05:30  INFO 7500 --- [crud1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-22T12:40:44.278+05:30  INFO 7500 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-22T12:40:44.731+05:30  INFO 7500 --- [crud1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74764622
+2025-09-22T12:40:44.731+05:30  INFO 7500 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-22T12:40:44.830+05:30  WARN 7500 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-22T12:40:44.833+05:30  WARN 7500 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-22T12:40:45.965+05:30  INFO 7500 --- [crud1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-22T12:40:46.230+05:30  INFO 7500 --- [crud1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T12:40:46.728+05:30  INFO 7500 --- [crud1] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-22T12:40:47.626+05:30  WARN 7500 --- [crud1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-22T12:40:48.293+05:30  INFO 7500 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Started Crud1ApplicationTests in 7.159 seconds (process running for 8.654)
+2025-09-22T12:40:49.021+05:30  INFO 7500 --- [crud1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T12:40:49.028+05:30  INFO 7500 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-22T12:40:49.037+05:30  INFO 7500 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-22T14:35:00.692+05:30  INFO 7100 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Starting Crud1ApplicationTests using Java 17.0.8 with PID 7100 (started by chandrasekar.p in D:\E\Crud Samples\Java_Concepts\crud1)
+2025-09-22T14:35:00.692+05:30  INFO 7100 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2025-09-22T14:35:02.421+05:30  INFO 7100 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-22T14:35:02.614+05:30  INFO 7100 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 179 ms. Found 3 JPA repository interfaces.
+2025-09-22T14:35:03.790+05:30  INFO 7100 --- [crud1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-22T14:35:04.108+05:30  INFO 7100 --- [crud1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-22T14:35:04.279+05:30  INFO 7100 --- [crud1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-22T14:35:04.985+05:30  INFO 7100 --- [crud1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-22T14:35:05.061+05:30  INFO 7100 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-22T14:35:05.764+05:30  INFO 7100 --- [crud1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d4f67e
+2025-09-22T14:35:05.764+05:30  INFO 7100 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-22T14:35:05.859+05:30  WARN 7100 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-22T14:35:05.865+05:30  WARN 7100 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-22T14:35:08.245+05:30  INFO 7100 --- [crud1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-22T14:35:08.385+05:30  INFO 7100 --- [crud1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T14:35:09.414+05:30  INFO 7100 --- [crud1] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-22T14:35:10.946+05:30  WARN 7100 --- [crud1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-22T14:35:12.009+05:30  INFO 7100 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Started Crud1ApplicationTests in 11.942 seconds (process running for 14.251)
+2025-09-22T14:35:13.130+05:30  INFO 7100 --- [crud1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T14:35:13.134+05:30  INFO 7100 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-22T14:35:13.154+05:30  INFO 7100 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-22T14:36:46.311+05:30  INFO 31960 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Starting Crud1ApplicationTests using Java 17.0.8 with PID 31960 (started by chandrasekar.p in D:\E\Crud Samples\Java_Concepts\crud1)
+2025-09-22T14:36:46.311+05:30  INFO 31960 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2025-09-22T14:36:47.896+05:30  INFO 31960 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-22T14:36:48.076+05:30  INFO 31960 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 3 JPA repository interfaces.
+2025-09-22T14:36:49.052+05:30  INFO 31960 --- [crud1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-22T14:36:49.216+05:30  INFO 31960 --- [crud1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-22T14:36:49.308+05:30  INFO 31960 --- [crud1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-22T14:36:49.803+05:30  INFO 31960 --- [crud1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-22T14:36:49.871+05:30  INFO 31960 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-22T14:36:50.364+05:30  INFO 31960 --- [crud1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a357c3e
+2025-09-22T14:36:50.372+05:30  INFO 31960 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-22T14:36:50.440+05:30  WARN 31960 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-22T14:36:50.442+05:30  WARN 31960 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-22T14:36:52.098+05:30  INFO 31960 --- [crud1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-22T14:36:52.249+05:30  INFO 31960 --- [crud1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T14:36:52.905+05:30  INFO 31960 --- [crud1] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-22T14:36:54.513+05:30  WARN 31960 --- [crud1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-22T14:36:55.715+05:30  INFO 31960 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Started Crud1ApplicationTests in 10.065 seconds (process running for 11.623)
+2025-09-22T14:36:56.698+05:30  INFO 31960 --- [crud1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T14:36:56.708+05:30  INFO 31960 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-22T14:36:56.726+05:30  INFO 31960 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-22T14:37:08.660+05:30  INFO 17712 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Starting Crud1ApplicationTests using Java 17.0.8 with PID 17712 (started by chandrasekar.p in D:\E\Crud Samples\Java_Concepts\crud1)
+2025-09-22T14:37:08.664+05:30  INFO 17712 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2025-09-22T14:37:10.260+05:30  INFO 17712 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-22T14:37:10.441+05:30  INFO 17712 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 181 ms. Found 3 JPA repository interfaces.
+2025-09-22T14:37:11.226+05:30  INFO 17712 --- [crud1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-22T14:37:11.356+05:30  INFO 17712 --- [crud1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-22T14:37:11.457+05:30  INFO 17712 --- [crud1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-22T14:37:11.998+05:30  INFO 17712 --- [crud1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-22T14:37:12.063+05:30  INFO 17712 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-22T14:37:12.607+05:30  INFO 17712 --- [crud1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3eb9c575
+2025-09-22T14:37:12.607+05:30  INFO 17712 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-22T14:37:12.652+05:30  WARN 17712 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-22T14:37:12.667+05:30  WARN 17712 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-22T14:37:14.183+05:30  INFO 17712 --- [crud1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-22T14:37:14.327+05:30  INFO 17712 --- [crud1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T14:37:15.174+05:30  INFO 17712 --- [crud1] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-22T14:37:16.475+05:30  WARN 17712 --- [crud1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-22T14:37:18.161+05:30  INFO 17712 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Started Crud1ApplicationTests in 10.209 seconds (process running for 11.899)
+2025-09-22T14:37:19.333+05:30  INFO 17712 --- [crud1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T14:37:19.336+05:30  INFO 17712 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-22T14:37:19.360+05:30  INFO 17712 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-22T14:43:16.906+05:30  INFO 21096 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Starting Crud1ApplicationTests using Java 17.0.8 with PID 21096 (started by chandrasekar.p in D:\E\Crud Samples\Java_Concepts\crud1)
+2025-09-22T14:43:16.908+05:30  INFO 21096 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2025-09-22T14:43:18.393+05:30  INFO 21096 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-22T14:43:18.621+05:30  INFO 21096 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 209 ms. Found 3 JPA repository interfaces.
+2025-09-22T14:43:19.575+05:30  INFO 21096 --- [crud1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-22T14:43:19.682+05:30  INFO 21096 --- [crud1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-22T14:43:19.752+05:30  INFO 21096 --- [crud1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-22T14:43:20.351+05:30  INFO 21096 --- [crud1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-22T14:43:20.422+05:30  INFO 21096 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-22T14:43:20.961+05:30  INFO 21096 --- [crud1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@586737ff
+2025-09-22T14:43:20.974+05:30  INFO 21096 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-22T14:43:21.051+05:30  WARN 21096 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-22T14:43:21.054+05:30  WARN 21096 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-22T14:43:22.590+05:30  INFO 21096 --- [crud1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-22T14:43:22.732+05:30  INFO 21096 --- [crud1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T14:43:23.222+05:30  INFO 21096 --- [crud1] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-22T14:43:24.348+05:30  WARN 21096 --- [crud1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-22T14:43:25.244+05:30  INFO 21096 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Started Crud1ApplicationTests in 8.872 seconds (process running for 10.285)
+2025-09-22T14:43:26.656+05:30  INFO 21096 --- [crud1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T14:43:26.665+05:30  INFO 21096 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-22T14:43:26.692+05:30  INFO 21096 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-22T14:58:24.911+05:30  INFO 12832 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Starting Crud1ApplicationTests using Java 17.0.8 with PID 12832 (started by chandrasekar.p in D:\E\Crud Samples\Java_Concepts\crud1)
+2025-09-22T14:58:24.911+05:30  INFO 12832 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2025-09-22T14:58:26.840+05:30  INFO 12832 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-22T14:58:27.004+05:30  INFO 12832 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 3 JPA repository interfaces.
+2025-09-22T14:58:28.081+05:30  INFO 12832 --- [crud1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-22T14:58:28.270+05:30  INFO 12832 --- [crud1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-22T14:58:28.381+05:30  INFO 12832 --- [crud1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-22T14:58:28.986+05:30  INFO 12832 --- [crud1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-22T14:58:29.069+05:30  INFO 12832 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-22T14:58:29.679+05:30  INFO 12832 --- [crud1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d1cb59f
+2025-09-22T14:58:29.685+05:30  INFO 12832 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-22T14:58:29.753+05:30  WARN 12832 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-22T14:58:29.757+05:30  WARN 12832 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-22T14:58:31.587+05:30  INFO 12832 --- [crud1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-22T14:58:31.730+05:30  INFO 12832 --- [crud1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T14:58:32.254+05:30  INFO 12832 --- [crud1] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-22T14:58:33.617+05:30  WARN 12832 --- [crud1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-22T14:58:34.558+05:30  INFO 12832 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Started Crud1ApplicationTests in 10.155 seconds (process running for 11.685)
+2025-09-22T14:58:36.298+05:30  INFO 12832 --- [crud1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T14:58:36.302+05:30  INFO 12832 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-22T14:58:36.336+05:30  INFO 12832 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-22T15:00:05.490+05:30  INFO 15428 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Starting Crud1ApplicationTests using Java 17.0.8 with PID 15428 (started by chandrasekar.p in D:\E\Crud Samples\Java_Concepts\crud1)
+2025-09-22T15:00:05.498+05:30  INFO 15428 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2025-09-22T15:00:07.239+05:30  INFO 15428 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-22T15:00:07.483+05:30  INFO 15428 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 234 ms. Found 3 JPA repository interfaces.
+2025-09-22T15:00:08.375+05:30  INFO 15428 --- [crud1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-22T15:00:08.453+05:30  INFO 15428 --- [crud1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-22T15:00:08.485+05:30  INFO 15428 --- [crud1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-22T15:00:09.282+05:30  INFO 15428 --- [crud1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-22T15:00:09.367+05:30  INFO 15428 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-22T15:00:10.100+05:30  INFO 15428 --- [crud1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a89414e
+2025-09-22T15:00:10.107+05:30  INFO 15428 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-22T15:00:10.226+05:30  WARN 15428 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-22T15:00:10.232+05:30  WARN 15428 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-22T15:00:12.117+05:30  INFO 15428 --- [crud1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-22T15:00:12.274+05:30  INFO 15428 --- [crud1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T15:00:12.781+05:30  INFO 15428 --- [crud1] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-22T15:00:13.950+05:30  WARN 15428 --- [crud1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-22T15:00:14.845+05:30  INFO 15428 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Started Crud1ApplicationTests in 9.819 seconds (process running for 11.407)
+2025-09-22T15:00:16.714+05:30  INFO 15428 --- [crud1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T15:00:16.722+05:30  INFO 15428 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-22T15:00:16.758+05:30  INFO 15428 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-22T15:01:17.362+05:30  INFO 17460 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Starting Crud1ApplicationTests using Java 17.0.8 with PID 17460 (started by chandrasekar.p in D:\E\Crud Samples\Java_Concepts\crud1)
+2025-09-22T15:01:17.364+05:30  INFO 17460 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2025-09-22T15:01:18.967+05:30  INFO 17460 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-22T15:01:19.218+05:30  INFO 17460 --- [crud1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 236 ms. Found 3 JPA repository interfaces.
+2025-09-22T15:01:20.000+05:30  INFO 17460 --- [crud1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-22T15:01:20.109+05:30  INFO 17460 --- [crud1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-09-22T15:01:20.184+05:30  INFO 17460 --- [crud1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-22T15:01:20.774+05:30  INFO 17460 --- [crud1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-22T15:01:20.871+05:30  INFO 17460 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-22T15:01:21.849+05:30  INFO 17460 --- [crud1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44492c06
+2025-09-22T15:01:21.855+05:30  INFO 17460 --- [crud1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-22T15:01:21.973+05:30  WARN 17460 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-22T15:01:21.978+05:30  WARN 17460 --- [crud1] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-22T15:01:23.785+05:30  INFO 17460 --- [crud1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-22T15:01:23.925+05:30  INFO 17460 --- [crud1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T15:01:24.419+05:30  INFO 17460 --- [crud1] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-22T15:01:25.557+05:30  WARN 17460 --- [crud1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-22T15:01:26.602+05:30  INFO 17460 --- [crud1] [main] com.crud1.Crud1ApplicationTests          : Started Crud1ApplicationTests in 9.717 seconds (process running for 11.547)
+2025-09-22T15:01:28.114+05:30  INFO 17460 --- [crud1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-22T15:01:28.125+05:30  INFO 17460 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-22T15:01:28.155+05:30  INFO 17460 --- [crud1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -362,7 +362,14 @@ List<String>:
 ]
 */
 
-
+            /*Sample***************************************/
+        System.out.println("***************************************************************************************");
+        Student ob1 = new Student("seakr",25,"pochampalli","Study");
+        Student ob2 = new Student("Gokul",24,"Rameshwaram","STUDY");
+        Student ob3 = new Student("Vicky",26,"Kadallur","STUDY");
+        List<Student> tu = List.of(ob1,ob2,ob3);
+        List<Student> rew =tu.stream().map(n->{ n.setJob("IT"); return n;}).collect(Collectors.toList());
+        System.out.println(rew);
 
     }
 }

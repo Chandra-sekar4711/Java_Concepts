@@ -79,7 +79,7 @@ public class OTMServiceimpl implements OTMService {
             girl.getOtmbesties().forEach(bestie->bestie.setOtmgirls(girl));
             res.getGirls_fk().add(girl);
         }
-
+    
         return otmrepo.save(res);
     }
 

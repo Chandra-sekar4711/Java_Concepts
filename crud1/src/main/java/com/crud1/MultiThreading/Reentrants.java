@@ -1,15 +1,17 @@
 package com.crud1.MultiThreading;
 
-public class MultithreadMain {
+public class Reentrants {
 
-    private  void methodA(){
+    public static synchronized void MethodA()
+    {
         for (int i =1;i<=5;i++)
         {
             System.out.println(Thread.currentThread().getName() + " is processing Method A" + i);
         }
+        MethodB();
     }
-
-    private void methodB(){
+    public static synchronized void MethodB()
+    {
         for (int i =1;i<=5;i++)
         {
             System.out.println(Thread.currentThread().getName() + " is processing Method B" + i);
@@ -17,11 +19,10 @@ public class MultithreadMain {
     }
 
     public static void main(String[] args) {
-        MultithreadMain obj1 = new MultithreadMain();
-         Thread t1 = new Thread(()->obj1.methodA(),"Thread t1");
-         Thread t2 = new Thread(()->obj1.methodA(),"Thread t2");
-         t1.start();
-         t2.start();
+        Reentrants obj = new Reentrants();
+        Thread t1 = new Thread(()->MethodA(),"Thread 1");
+        t1.start();
 
     }
+
 }

@@ -1,5 +1,6 @@
 package com.crud.Model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
@@ -32,7 +33,6 @@ public class OTMParent {
     String pjob;
 
     @JsonIgnoreProperties(value = "otmparent", allowSetters = true)
-    @ToString.Exclude
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "otmparent",orphanRemoval = true)
     List<OTMChild> child_fk = new ArrayList<>();
 

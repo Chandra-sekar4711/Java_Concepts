@@ -1,5 +1,7 @@
 package com.crud.Model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,9 +24,8 @@ public class OTMChild {
     @Column(name="child_job")
     String childjob;
 
-    @ManyToOne()
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "parent_fk",referencedColumnName = "pid" )
     OTMParent otmparent;
-
 
 }
