@@ -307,6 +307,55 @@ public class Streamss {
         List<String> sam1  = List.of("xxx","yyy","ZZZ");
         sam1.stream().map(n->n+" name da").forEach(n-> System.out.println(n));
 
+        /// *************************************** Questions ****************************
+
+        System.out.println("***************************************************************************************************\n");
+        //Programs
+        Student stu1 = new Student("seakr",25,"pochampalli","IT");
+        Student stu2 = new Student("Gokul",24,"Rameshwaram","IT");
+        Student stu3 = new Student("Vicky",26,"Kadallur","IT");
+        Student stu4 = new Student("Agnash",23,"Kanyakumari","Petrolem industry");
+        Student stu5 = new Student("Thiru",28,"Dubai","Business");
+        Student stu6 = new Student("Suriys",26,"Bangalaor","Business");
+
+        //Find total highest salary for each department
+        List<Student> jk =List.of(stu1,stu2,stu3,stu4,stu5,stu6);
+        Map<String,Integer> mn = jk.stream().collect(Collectors.groupingBy(Student::getJob,Collectors.summingInt(Student::getAge)));
+        System.out.println(mn);
+
+        Map.Entry<String, Integer> maxEntry = mn.entrySet()
+                .stream()
+                .max(Map.Entry.comparingByValue())
+                .orElseThrow();
+
+        System.out.println("Department with max value: " + maxEntry.getKey() + " -> " + maxEntry.getValue());
+
+
+        //2nd Question
+        List<List<Integer>> listOfLists = Arrays.asList(
+                Arrays.asList(1, 5, 3),
+                Arrays.asList(7, 2, 9),
+                Arrays.asList(4, 8, 6)
+        );
+        List<Integer> fd = listOfLists.stream().flatMap(n->n.stream()).sorted().collect(Collectors.toList());
+        System.out.println(fd);
+
+        //3rd non repeted char in string
+//     String input = "swiss";
+//     input
+
+        //4 Partition employees by salary threshold
+
+        Map<Boolean,List<Student>> lk = jk.stream().collect(Collectors.partitioningBy(n->n.getAge()>20));
+        System.out.println(lk);
+
+        //5: Average Age of IT Department ******* IMportatnt
+        Map<String,IntSummaryStatistics> dm = jk.stream().collect(Collectors.groupingBy(Student::getJob,Collectors.summarizingInt(Student::getAge)));
+        System.out.println(dm.get("IT").getAverage());
+
+        //******************************************************************************************
+
+
         //Explaining how flat map works to flaten the list of elements
         /*
 FlatMap Cheat Sheet — Example
