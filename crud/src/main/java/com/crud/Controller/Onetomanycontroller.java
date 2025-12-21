@@ -4,15 +4,12 @@ import java.util.Optional;
 import java.util.Set;
 
 import com.crud.Model.*;
-import com.crud.Repository.OTMChildRepo;
-import com.crud.Repository.OTMParentRepo;
+import com.crud.Repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.crud.Repository.CarsRepository;
-import com.crud.Repository.PersonRepository;
 import com.crud.Service.StudentService;
 
 //one person many cars
@@ -30,7 +27,16 @@ public class Onetomanycontroller {
 	OTMParentRepo otmparentrepo;
 
 	@Autowired
+	OTOPersonrepo otopersonrepo;
+
+	@Autowired
 	OTMChildRepo otmchildrepo;
+
+	@Autowired
+	OTMDepartmentrepo depetrepo;
+
+	@Autowired
+	OTMEmployeerepo emprepo;
 	
 	@CrossOrigin(origins = "*", allowedHeaders = "*")
 	@RequestMapping(value = "/Onetomany", method = RequestMethod.POST)
@@ -91,6 +97,57 @@ public class Onetomanycontroller {
           return res;
 
         }
+
+		//==================================================================================
+
+	   @PostMapping("/OTOPersonsave")
+	   public OTOPerson saveOTOPerson(@RequestBody OTOPerson obj)
+	   {
+		   obj.getOtopassport().setPerson(obj);
+		   OTOPerson res = otopersonrepo.save(obj);
+		   System.out.println(res);
+          return res;
+
+	   }
+
+	   @GetMapping("/OTOgetperson/{id}")
+			   public OTOPerson getperson(@PathVariable Integer id)
+	   {
+		   OTOPerson res = otopersonrepo.findById(id).orElseThrow(()->new RuntimeException());
+		   System.out.println(res);
+           return res;
+       }
+
+	       @PostMapping("/savedept")
+		   public OTMDepartment savedept(@RequestBody OTMDepartment dept)
+		   {
+			   dept.getEmployees().stream().forEach(n->{n.setDepartment(dept); n.getOtmfamily().stream().forEach(n1->n1.setOtmemp(n));});
+			   OTMDepartment res = depetrepo.save(dept);
+			   return res;
+		   }
+
+	@GetMapping("/OTMdept/{id}")
+	public void getdept(@PathVariable Integer id)
+	{
+		OTMDepartment res = depetrepo.findById(id).orElseThrow(()->new RuntimeException());
+		System.out.println(res);
+
+
+	}
+
+	@DeleteMapping("/deletedept")
+	public String deletedept(@RequestParam Integer id)
+	{
+		depetrepo.deleteById(id);
+		return "deleted";
+
+	}
+
+
+
+
+
+
 
 
     }

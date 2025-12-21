@@ -3,8 +3,13 @@ package com.crud1.Controller;
 import com.crud1.Model.OTOPerson;
 import com.crud1.Service.OTOService;
 import io.swagger.v3.oas.annotations.Operation;
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+
 
 @RestController
 @RequestMapping("/crud1")
@@ -30,10 +35,12 @@ public class OTOController {
 
     @GetMapping("/getOTOPersonByID/{personID}")
     @Operation(summary = "Get Person By ID")
-    private OTOPerson getOTOPersonByID(@PathVariable Integer personID)
+    private ResponseEntity<OTOPerson> getOTOPersonByID(@PathVariable Integer personID)
     {
         OTOPerson res = otoservice.getOTOPersonById(personID);
-        return res;
+        return new ResponseEntity<>(res,HttpStatus.ALREADY_REPORTED );
+
     }
 
 }
+

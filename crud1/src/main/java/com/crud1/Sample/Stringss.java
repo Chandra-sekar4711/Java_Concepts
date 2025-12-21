@@ -117,7 +117,17 @@ public class Stringss {
         String fres = String.join(" ",f);
         System.out.println(fres);
 
-
+        String dd = "a1b2";
+        char ch [] = dd.toCharArray();
+        int count = 0 ;
+        for (int i1=0;i1<ch.length;i1++)
+        {
+            if (ch[i1]>='0' && ch[i1]<='9')
+            {
+                count = count +(ch[i1]-'0');
+            }
+        }
+        System.out.println(count);
     }
 }
 

@@ -1,7 +1,11 @@
 package com.crud1.Sample;
 
+import lombok.ToString;
+import org.springframework.http.server.DelegatingServerHttpResponse;
+
 import java.util.Objects;
 
+@ToString
 public class Teacher {
 
     String name ;
@@ -50,25 +54,20 @@ public class Teacher {
         this.job = job;
     }
 
-    @Override
-    public int hashCode() {
-       return Objects.hash(name,age,address,job);
+    public String toString()
+    {
+
+        return this.name +" "+this.age;
     }
 
-    public boolean equals(Object o)
+    public boolean equals(Object o )
     {
-        if(o!=null)
-        {
-            Teacher obj = (Teacher)o;
-            if(this.name.equals(obj.name) && this.age==obj.age && this.job.equals(obj.job) && this.address.equals(obj.address))
-            {
-                return true;
-            }
-            else{
-                return false;
-            }
+        Teacher obj = (Teacher)o;
+        return this.name.equals(obj.name) &&  this.address.equals(obj.address) &&  this.job.equals(obj.job);
+    }
 
-        }
-        return false;
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, address, job);
     }
 }
