@@ -14,7 +14,7 @@ public class RaceConditionExample {
         ExecutorService executor = Executors.newFixedThreadPool(10);
         RaceConditionExample rc = new RaceConditionExample();
         for (int i = 0; i < 1000; i++) {
-            executor.submit(()->rc.increment());
+            executor.execute(()->rc.increment());
         }
 
         executor.shutdown();
